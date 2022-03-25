@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    color: white;
+    background-color:rgb(2, 36, 46);
+}
+
+/* typography */
+.hero-name,
+.attack-points{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.math-expression p,
+.timer span {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+p {
+    margin: .3rem;
+}
+
+img {
+    width: 100%;
+    max-width: 100px;
+}
+
+/* health-bar */
+.health-bar-container {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+
+}
+
+.health-bar {
+    height: 5px;
+    background-color: green;
+}
+
+
+/* layout */
+.main-container {
+    width: 90%;
+    max-width: 300px;
+    min-height: 100vh;
+    margin: 0 auto;
+    /* background-color: cadetblue; */
+    text-align: center;
+    padding: .5rem;
+}
+
+.sub-container {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    border: 2px solid darkgoldenrod;
+    background-image: radial-gradient(rgb(150, 0, 150), rgb(0, 0, 0) 70%);
+    border-radius: 10px;
+    margin-bottom: .5rem;
+}
+
+.text-left {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+
+
+.math-expression {
+    width: 70%;
+    max-width: 280px;
+    margin: 1rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid goldenrod;
+}
+
+
+/* buttons */
+.answer-box .btn,
+.start-btn {
+    font-size: 2.5rem;
+    color:black;
+    border-radius: 3px;
+    background-color: none;
+    border: none;
+    margin: 0 .2em;
+    cursor: pointer;
+    padding: 0 .3em;
+    background-color: cadetblue;
+}
+
+.btn:hover,
+.btn:focus,
+.start-btn:hover,
+.start-btn:focus {
+    background-color: white;
+}
+
+.hide-El {
+    display: none;
+}
+
+.show-El {
+    display: block;
+}
+
+.hide-message {
+    display: none;
+}
+
+.sub-container::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(75, 0, 0);
+}
+
